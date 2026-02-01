@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine Proposal 💘</title>
+  <style>
+    body {
+      background-color: #ffe6eb;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h1 {
+      color: #d6336c;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      margin: 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    #yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+    #no {
+      background-color: #adb5bd;
+      color: white;
+    }
+    img {
+      width: 250px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="question">Will you be my Valentine, Dr Abha? 💖</h1>
+
+  <button id="yes" onclick="yesClicked()">YES 💕</button>
+  <button id="no" onclick="noClicked()">NO 🙃</button>
+
+  <div>
+    <img id="gif" src="https://media.giphy.com/media/l0MYyDa8S9ghzNebm/giphy.gif">
+  </div>
+
+<script>
+  function yesClicked() {
+    document.getElementById("question").innerHTML =
+      "YAY! Best decision ever 💘🥰";
+    document.getElementById("gif").src =
+      "https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif";
+  }
+
+  function noClicked() {
+    document.getElementById("question").innerHTML =
+      "Are you sure? 🤨 Think again…";
+    document.getElementById("gif").src =
+      "https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif";
+  }
+</script>
+
+</body>
+</html>
